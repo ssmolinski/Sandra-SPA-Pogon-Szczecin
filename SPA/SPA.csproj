@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{94479AA6-0799-4014-A2F6-5E91ADE6C43F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SPA</RootNamespace>
+    <AssemblyName>SPA</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administrator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator.Designer.cs">
+      <DependentUpon>Administrator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dietetyk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dietetyk.Designer.cs">
+      <DependentUpon>Dietetyk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DodajKonto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodajKonto.Designer.cs">
+      <DependentUpon>DodajKonto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EdytujKonto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EdytujKonto.Designer.cs">
+      <DependentUpon>EdytujKonto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fizjoterapeuta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fizjoterapeuta.Designer.cs">
+      <DependentUpon>Fizjoterapeuta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menadzer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menadzer.Designer.cs">
+      <DependentUpon>Menadzer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Statystyk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statystyk.Designer.cs">
+      <DependentUpon>Statystyk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trener.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trener.Designer.cs">
+      <DependentUpon>Trener.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsunKonto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UsunKonto.Designer.cs">
+      <DependentUpon>UsunKonto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zawodnik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zawodnik.Designer.cs">
+      <DependentUpon>Zawodnik.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Administrator.resx">
+      <DependentUpon>Administrator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dietetyk.resx">
+      <DependentUpon>Dietetyk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DodajKonto.resx">
+      <DependentUpon>DodajKonto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EdytujKonto.resx">
+      <DependentUpon>EdytujKonto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fizjoterapeuta.resx">
+      <DependentUpon>Fizjoterapeuta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menadzer.resx">
+      <DependentUpon>Menadzer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Statystyk.resx">
+      <DependentUpon>Statystyk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trener.resx">
+      <DependentUpon>Trener.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsunKonto.resx">
+      <DependentUpon>UsunKonto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zawodnik.resx">
+      <DependentUpon>Zawodnik.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8464.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ADMIN.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DIETETYK.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fizjo.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FIZJOTER.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGOWANIE.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MENADZER.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\STATYSTYK.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TRENER.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TRENER2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZAWODNIK.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edytowanie.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ed2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMIE.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NAZWISKO.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NAZWISKO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMIE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\STATUS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\STATUS1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\USUWANIE.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NOWE.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DATA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NAZWA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OPIS.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
